@@ -1,0 +1,161 @@
+.header{
+    padding: 30px 0 ;
+}
+.header ul {
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+}
+.header ul a{
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color:#0D0E43;
+
+}
+.search form{
+    border: 2px solid #ddd;
+}
+.search input{
+    border: 0;
+    padding: 8px 40px;
+}
+.search button{
+    border: 0;
+    padding: 8px;
+    background-color: var(--mainColor);
+}
+.header .bars{
+    display: none;
+
+}
+
+@media screen and (max-width:1200px) {
+    .header ul {
+        display: none;
+    }
+    .search form{
+        display: none;
+    }
+    .header .bars{
+        display: block;
+    }
+
+    
+}
+
+/*footer*/
+
+.footer{
+    background-color: #EEEFFB;
+    padding: 30px 0;
+    text-align: center;
+    color: #8A8FB9;
+}
+
+.footer .row{
+    align-items: flex-start;
+    gap: 20px;
+}
+.footer-left-side{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width:calc((100%-20px)/2);
+    gap:20px;
+    align-items: flex-start;
+}
+.email form{
+    border: 2px solid #ddd;
+}
+.email input{
+    border: 0;
+    padding: 8px 40px;
+
+}
+.email input::placeholder{
+    color:#8A8FB9;
+}
+.email button{
+    border: 0;
+    padding: 10px 20px;
+    background-color: var(--mainColor);
+    color:#fff;
+}
+
+.footer-item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 28px;
+    width: calc((100%-40px)/3);
+    min-width: 200px;
+}
+.footer-right-side{
+    display: flex;
+    flex-wrap: wrap;
+    width:calc((100%-20px)/2);
+    justify-content: space-around;
+    gap: 20px;
+   
+}
+.footer-right-side h2{
+    color:black;
+}
+.footer-right-side nav  {
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    flex-direction: column;   
+}
+.footer-right-side a{
+    color: #8A8FB9;   
+}
+/*اجتهاد شخصي مني*/
+/*
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    color: #8A8FB9;
+    font-style: normal;
+    font-size: 14px;
+}
+.contact address{
+    font-style: normal;
+
+}
+    */
+    @media screen and (max-width:992px) {
+        .container{
+            width: calc(100%-100px);
+        }
+        .footer-left-side{
+            width: 100%;
+            align-items: center;
+        }
+        .footer-right-side{
+            width: 100%;
+        }
+        
+    }
+
+    @media screen and (max-width:568px) {
+        .container{
+            width:100%;
+            padding: 0 20px;
+        }
+        
+    }
+    @media screen and (max-width:650px){
+
+        .email button{
+            width:100%;
+        }
+        .email input{
+            width:100%;
+
+        }
+    }
+    
